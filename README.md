@@ -1,2 +1,2 @@
-# primer-repositorio
-primer repositorio de practica para empezar a usar git huib
+# repositorio para entrega de trabajos y ejercicios
+repositorio la entrega de trabajos practicos y ejercicios dados por filminas en curso.
