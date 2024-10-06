@@ -39,6 +39,7 @@ return count
 let wordToFind:string = rs.question("Ingrese la palabra a buscar: ");
 let matchesFound:number = howManyTextInPara(paragraph.toLocaleLowerCase(),wordToFind.toLowerCase());
 
+
 console.log("----------------------------------------------------------");
 console.log(`se encontraron: ${matchesFound} coincidencias`);
 
