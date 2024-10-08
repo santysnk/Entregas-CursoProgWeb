@@ -15,7 +15,6 @@ const paragraph: string =
     Nadie se atrevió a contradecirla. A él le parecía bien, se lo dijo como si la elección del nombre hubiera sido cosa de poca importancia. 
     En aquellos días no había problemas en la casa. Las cosas cambiaron después, claro. Cambiaron tanto.`;
 
-
 //devuelve true si searchTerm se encuentra en fullText
 function isTextInPara(fullText: string, searchTerm: string): boolean {
     return fullText.toLowerCase().includes(searchTerm.toLowerCase());
@@ -38,7 +37,6 @@ return count
 
 let wordToFind:string = rs.question("Ingrese la palabra a buscar: ");
 let matchesFound:number = howManyTextInPara(paragraph.toLocaleLowerCase(),wordToFind.toLowerCase());
-
 
 console.log("----------------------------------------------------------");
 console.log(`se encontraron: ${matchesFound} coincidencias`);
