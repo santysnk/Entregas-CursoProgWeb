@@ -1,9 +1,7 @@
 import * as rs from "readline-sync";
 
 /*
-Estructuras de Datos
-
-Invertir Arreglo
+Estructuras de Datos: Invertir Arreglo
 
     • Almacene en un arreglo de tamaño N los números ingresados por el usuario.
     • La dimensión N también es ingresada por el usuario.
@@ -19,10 +17,22 @@ let numArray:number[] = new Array(tamArray);
 
 const long:number = numArray.length;
 
-for (let i:number = 0; i<long; i++){
+for (let i = 0; i < long; i++){
     numArray[i]= rs.questionInt(`Ingrese valor, ${i+1} de ${long}: `)
 }
+console.log("\nArreglo");
+console.log("----------");
+console.log(numArray);
 
-for (let i:number=long; i>=1 ; i--){
-    console.log(numArray[i-1])
+
+console.log("\nArreglo invertido");
+console.log("------------------");
+
+// 0 1 2 3 4
+let InvertNumArray:number[] = new Array(tamArray);
+
+for (let i = long; i > 0 ; i--){
+    InvertNumArray[long-i]=numArray[i-1]
 }
+
+console.log(InvertNumArray);

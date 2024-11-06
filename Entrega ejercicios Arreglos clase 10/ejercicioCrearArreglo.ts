@@ -1,8 +1,7 @@
 import * as rs from "readline-sync";
 
 /*
-Estructuras de Datos
-Crear arreglo
+Estructuras de Datos: Crear arreglo
     1) Crear un arreglo de letras e imprimirlo.
 
     2) Dado un array con nombres de tamaño 5, pedir al usuario que ingrese un nombre y verificar si está
@@ -11,11 +10,20 @@ Crear arreglo
 
 console.clear()
 console.log(" Arreglo de letras e imprimirlo.");
-console.log("---------------------------------");
+console.log("---------------------------------\n");
+console.log(" Arreglo de letras.");
+console.log("-------------------\n");
 
+let arrayString:string[] =["a","b","c","d","e","f","g","h"]; 
+console.log(arrayString);
+console.log("---------------------------------\n");
+
+console.log(" Buscar nombre en arreglo.");
+console.log("--------------------------");
 
 let nombresArray:string[] = new Array(5);
 let encontrado:boolean = false;
+
 nombresArray[0]="marcos";
 nombresArray[1]="luciana";
 nombresArray[2]="andres";

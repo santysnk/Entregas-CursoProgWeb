@@ -1,8 +1,5 @@
-
 /*
-Estructuras de Datos
-
-Encontrar el elemento más grande del arreglo
+Estructuras de Datos: Encontrar el elemento más grande del arreglo.
 
 Dado el siguiente arreglo [4,7,9,3,1,45,67,23,29,78,11,16]:
 
@@ -18,9 +15,8 @@ console.log("--------------------------------------------");
 let arrayDeNum: number[] = [4, 7, 9, 3, 1, 45, 67, 23, 29, 78, 11, 16];
 let mayorNum:number = 0;
 
-
+// Función para determinar si es par o impar
 function esParOImpar(numero: number): void {
-    // Función para determinar si es par o impar
     if (numero % 2 === 0) {
         console.log(`El número ${numero} es par.`);
     } else {
@@ -28,15 +24,14 @@ function esParOImpar(numero: number): void {
     }
 }
 
-
 // Encontrar el número mayor
-for (let i:number = 0; i < arrayDeNumeros.length;i++){
-    if (mayor < arrayDeNumeros[i]){
-        mayor = arrayDeNumeros[i];
+for (let i:number = 0; i < arrayDeNum.length;i++){
+    if (mayorNum < arrayDeNum[i]){
+        mayorNum = arrayDeNum[i];
     }
 }
-console.log(`\nEl numero mayor en el array es: ${mayor}`);
-esParOImpar(mayor);
+console.log(`\nEl numero mayor en el array es: ${mayorNum}`);
+esParOImpar(mayorNum);
 
 /* Tambien podemos usar el siguiente metodo
     array.forEach((elemento, indice, array) => {
@@ -44,14 +39,14 @@ esParOImpar(mayor);
 */
 
 console.log("\nEncontrar el elemento más grande del arreglo (forEach)");
-console.log("--------------------------------------------");
+console.log("--------------------------------------------------------");
 
 
-arrayDeNumeros.forEach ((n) => {
-    if (n > mayor){
-        mayor = n;
+arrayDeNum.forEach ((n) => {
+    if (n > mayorNum){
+        mayorNum = n;
     }  
 });
 
-console.log(`\nEl numero mayor en el array es (forEach): ${mayor}`);
-esParOImpar(mayor);
+console.log(`\nEl numero mayor en el array es (forEach): ${mayorNum}`);
+esParOImpar(mayorNum);

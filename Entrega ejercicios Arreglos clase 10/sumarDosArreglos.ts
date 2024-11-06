@@ -1,9 +1,7 @@
 import * as rs from "readline-sync";
 
 /*
-Estructuras de Datos
-
-Sumar Dos Arreglos
+Estructuras de Datos: Sumar Dos Arreglos
 
     • Sumar los elementos de cada una de las posiciones de dos arreglos y guardar el resultado en otro arreglo.
 
